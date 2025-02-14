@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOILO</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/work.css" />
+    <script>
+      window.PORTFOLIO_PAGE = "work";
+    </script>
+    <script defer src="../index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="gnb">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#about_me">About me</a>
+          <a href="../index.html#works" class="active">Works</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="tetris">
+        <div class="visual">
+          <div class="wrap">
+            <h1 class="visual_title fade_in" data-delay="0">
+              Game Site / JavaScript
+              <span class="fade_in" data-delay="200">2D테트리스 게임</span>
+            </h1>
+            <img src="../img/works_img/work_tetris.png" alt="테트리스 홈페이지" />
+          </div>
+        </div>
+        <div class="contents fade_in" data-delay="400">
+          <div class="wrap">
+            <div class="summary">
+              <h2>2D고전게임 '테트리스' 게임</h2>
+              <p>
+                종강 후 부족한 부분을 공부 중 유튜브를 보면서 Vanilla JavaScript로 테트리스 게임을 하드코딩하여 만들었습니다. <br />
+                createElement를 사용해 그리드를 그렸으며, 전개 연산자를 사용해 movingitem에 <br />
+                위치를 알 수 있었습니다. <br />
+                setInterval를 사용해 콘텐츠에 속도를 제어하고, keydown 이벤트를 switch 문에 사용하여 방향 키와 스페이스바 키를 제어할 수 있었습니다. <br />
+                createElement, 전개 연산자를 경험할 수 있었던 프로젝트였습니다.
+              </p>
+            </div>
+            <div class="project">
+              <ul>
+                <li>
+                  <b>사용 언어</b>
+                  <p>Vanilla JavaScript</p>
+                </li>
+                <li>
+                  <b>참여도</b>
+                  <p>퍼블리싱(100%)</p>
+                </li>
+                <li>
+                  <b>제작기간</b>
+                  <p>22.07.04~ 22.08.01</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contents_img">
+          <div class="wrap">
+            <iframe src="website/tetris/index.html" frameborder="0" class="fade_in" data-delay="0"></iframe>
+          </div>
+        </div>
+        <div class="work_gotop_btn">
+          <p class="gotop_btn_wrap fade_in" data-delay="0">
+            <button>BACK TO TOP. <span class="top_ico">↑</span></button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <address id="contact" class="contact">
+          <p class="contcat_title">
+            I hope to meet <br />
+            you soon!
+          </p>
+          <div class="contact_wrap">
+            <div class="contact_us">
+              <b class="contcat_sub_title">GET IN TOUCH</b>
+              <a href="https://github.com/Baekangsun/portfolio.git" target="_blank">Github</a>
+              <a href="mailto:ss38318@naver.com" target="_blank">ss38318@naver.com</a>
+              <a href="tel:01027527072" target="_blank">010-2752-7072</a>
+            </div>
+            <div class="explore">
+              <b class="contcat_sub_title">EXPLORE</b>
+              <div class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about_me">About me</a>
+                <a href="../index.html#works" class="active">Works</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </address>
+      </div>
+      <p class="copy">Copyright &copy; KANGSUN BAE 2022. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

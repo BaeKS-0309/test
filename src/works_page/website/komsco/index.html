@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>화폐박물관</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="../../../css/reset.css" />
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--Java Script-->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="skip_nav">
+      <a href="#main">본문바로보기</a>
+    </div>
+    <div class="popup">
+      <!--jQuery 때 구현-->
+      <div class="container">
+        <ul>
+          <li class="on">
+            <a href="#">
+              <span class="bold">한국조폐공사 쇼핑몰 제품 판매 안내</span>
+              <span class="desc">한국조폐공사 쇼핑몰 제품을 화폐박물관에서도 전시 판매합니다.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="bold">방역패스 적용 시설입니다. 단체는 6명이내 입장 가능합니다.</span>
+              <span class="desc">화폐박물관은 '방역패스' 적용 시설입니다. QR X COOV 인증 필수(18세 이하 제외)</span>
+            </a>
+          </li>
+        </ul>
+        <button class="prev_btn"><span class="blind">이전</span></button>
+        <button class="next_btn"><span class="blind">다음</span></button>
+        <div class="controls">
+          <button class="dot on"><span class="blind">첫번째 공지</span></button>
+          <button class="dot"><span class="blind">두번째 공지</span></button>
+          <button class="autoPlayBtn play"><span class="blind">재생</span></button>
+          <button class="autoPlayBtn stop"><span class="blind">멈춤</span></button>
+        </div>
+        <div class="today_check">
+          <input type="checkbox" id="today" />
+          <label for="today">오늘하루 열지않기</label>
+          <button class="close_btn"><span class="blind">팝업닫기</span></button>
+        </div>
+      </div>
+    </div>
+    <div id="wrap">
+      <header>
+        <div class="container .clrfix">
+          <h1>
+            <a href="#"><span class="blind">조폐공사 화폐박물관</span></a>
+          </h1>
+          <div class="header_util">
+            <a href="#" class="login">LOGIN</a>
+            <button class="popup_btn">POPUP <img src="img/popup_arrow.png" alt="" /></button>
+            <div class="search_wrap">
+              <button class="search_btn"><span class="blind">검색</span></button>
+              <div class="search_box">
+                <form action="#">
+                  <input type="text" placeholder="검색어를 입력하세요" />
+                  <input type="image" src="img/sear_ico2.png" alt="검색하기" />
+                </form>
+                <button class="close_btn"><img src="img/sear_close.png" alt="검색 닫기" /></button>
+              </div>
+            </div>
+            <!--//.search_wrap-->
+            <div class="allmenu_wrap">
+              <button class="allmenu_btn"><span class="blind">전체메뉴</span></button>
+              <div class="allmenu_box">
+                <ul class="a1">
+                  <li>
+                    <a href="#">이용안내</a>
+                    <ul class="a2">
+                      <li><a href="#">관람안내</a></li>
+                      <li><a href="#">관람예약</a></li>
+                      <li><a href="#">시설안내</a></li>
+                      <li><a href="#">시설대관</a></li>
+                      <li><a href="#">자원봉사신청</a></li>
+                      <li>
+                        <a href="#">질문과답변</a>
+                        <ul class="a3">
+                          <li><a href="#">자주하는 질문</a></li>
+                          <li><a href="#" target="_blank" class="blank_ico">질문하기</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">전시안내</a>
+                    <ul class="a2">
+                      <li>
+                        <a href="#">상설전시관</a>
+                        <ul class="a3">
+                          <li><a href="#">소개</a></li>
+                          <li><a href="#">제1전시관</a></li>
+                          <li><a href="#">제2전시관</a></li>
+                          <li><a href="#">제3전시관</a></li>
+                          <li><a href="#">제4전시관</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">특별전시관</a></li>
+                      <li>
+                        <a href="#">랜선전시관</a>
+                        <ul class="a3">
+                          <li><a href="#">영상전시실</a></li>
+                          <li><a href="#">은행권 위변조방지요소</a></li>
+                          <li><a href="#">공ㄹ사 홍보영상</a></li>
+                          <li><a href="#" target="_blank" class="blank_ico">VR전시실</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">교육/행사</a>
+                    <ul class="a2">
+                      <li><a href="#">프로그램 안내</a></li>
+                      <li><a href="#">신청 확인/취소</a></li>
+                      <li><a href="#">교육자료</a></li>
+                      <li><a href="#">포토 갤러리</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">소장품</a>
+                    <ul class="a2">
+                      <li><a href="#">유물검색</a></li>
+                      <li><a href="#">기증 기탁 안내</a></li>
+                      <li><a href="#">열람 복제 안내</a></li>
+                      <li><a href="#">화폐소식</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">박물관 소개</a>
+                    <ul class="a2">
+                      <li><a href="#">인사말</a></li>
+                      <li><a href="#">설립목적</a></li>
+                      <li><a href="#">연혁</a></li>
+                      <li><a href="#">공지사항</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="side_link">
+                  <span>관람 문의 042.870.1200</span>
+                  <a href="#" class="blank_ico">한국조폐공사</a>
+                  <a href="#" class="blank_ico">한국조폐공사쇼핑몰</a>
+                </div>
+                <button class="close_btn"><img src="img/sear_close.png" alt="검색 닫기" /></button>
+              </div>
+            </div>
+            <!--//.allmenu_wrap-->
+          </div>
+          <!--//.header_util-->
+          <nav class="gnb">
+            <ul class="g1 .clrfix">
+              <li>
+                <a href="#">이용안내</a>
+                <ul class="g2">
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">관람예약</a></li>
+                  <li><a href="#">시설안내</a></li>
+                  <li><a href="#">시설대관</a></li>
+                  <li><a href="#">자원봉사신청</a></li>
+                  <li>
+                    <a href="#">질문과답변</a>
+                    <ul class="g3">
+                      <li><a href="#">자주하는 질문</a></li>
+                      <li><a href="#" target="_blank">질문하기</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">전시안내</a>
+                <ul class="g2">
+                  <li>
+                    <a href="#">상설전시관</a>
+                    <ul class="g3">
+                      <li><a href="#">소개</a></li>
+                      <li><a href="#">제1전시관</a></li>
+                      <li><a href="#">제2전시관</a></li>
+                      <li><a href="#">제3전시관</a></li>
+                      <li><a href="#">제4전시관</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">특별전시관</a></li>
+                  <li>
+                    <a href="#">랜선전시관</a>
+                    <ul class="g3">
+                      <li><a href="#">영상전시실</a></li>
+                      <li><a href="#">은행권 위변조방지요소</a></li>
+                      <li><a href="#">공사 홍보영상</a></li>
+                      <li><a href="#" target="_blank">VR전시실</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">교육/행사</a>
+                <ul class="g2">
+                  <li><a href="#">프로그램 안내</a></li>
+                  <li><a href="#">신청 확인/취소</a></li>
+                  <li><a href="#">교육자료</a></li>
+                  <li><a href="#">포토 갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">소장품</a>
+                <ul class="g2">
+                  <li><a href="#">유물검색</a></li>
+                  <li><a href="#">기증 기탁 안내</a></li>
+                  <li><a href="#">열람 복제 안내</a></li>
+                  <li><a href="#">화폐소식</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">박물관 소개</a>
+                <ul class="g2">
+                  <li><a href="#">인사말</a></li>
+                  <li><a href="#">설립목적</a></li>
+                  <li><a href="#">연혁</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!--//.container-->
+      </header>
+      <main id="main">
+        <ul class="main_nav">
+          <li data-offset="visual_wrap">HOME<span></span></li>
+          <li data-offset="exhibit_wrap">전시 및 교육<span></span></li>
+          <li data-offset="standing_wrap">상설전시<span></span></li>
+          <li data-offset="museum_info_wrap">관람안내 및 소식<span></span></li>
+        </ul>
+        <section class="visual_wrap">
+          <div class="visual_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/vis_1.jpg" alt="상설 1전시관 내부" class="vis_on" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/vis_2.jpg" alt="전시관 외부" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/vis_3.jpg" alt="특별전시관 전시품" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/vis_4.jpg" alt="화폐역사관 내부" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/vis_5.jpg" alt="상설 2전시관 내부" />
+              </div>
+            </div>
+          </div>
+          <div class="visual_txt">
+            <div class="container">
+              <div class="slogan">
+                <strong>한국조폐공사 화폐박물관</strong>
+                <em>우리나라 최초의 화폐전문박물관</em>
+                <p>우리나라 화폐 천 년의 역사를 한눈에 경험해보세요</p>
+              </div>
+              <a href="#">관람안내 바로가기 <img src="img/btn_go_arrow.png" alt="" /></a>
+              <div class="swiper-pagination"></div>
+              <div class="control">
+                <button class="prev"><img src="img/section_1_slide_arrow.png" alt="이전보기" /></button>
+                <button class="autoPlayBtn play"><img src="img/section_1_slide_play.png" alt="슬라이드 시작" /></button>
+                <button class="autoPlayBtn stop"><img src="img/section_1_slide_stop.png" alt="슬라이드 멈춤" /></button>
+                <button class="next"><img src="img/section_1_slide_arrow.png" alt="다음보기" /></button>
+              </div>
+            </div>
+          </div>
+          <!--//.visual_txt-->
+        </section>
+        <!--//.visual_wrap-->
+        <section class="exhibit_wrap">
+          <div class="container">
+            <h2>전시 및 교육</h2>
+            <ul class="list_wrap">
+              <li class="1">
+                <a href="#">
+                  <div class="exhi_img"><img src="img/exhi_img_1.png" alt="" /></div>
+                  <div class="exhi_txt">
+                    <span class="sort">특별전시</span>
+                    <span class="state_ing">진행중</span>
+                    <strong>[특별전시실] 한국서가협회 대전지회 서화전 '월당서회전'(제7회)</strong>
+                    <p>
+                      일시 : <span class="date">2021.12.07 ~ 2021.08.01</span> <br />
+                      장소 : <span class="place">1층 특별전시실</span>
+                    </p>
+                    <span class="more">자세히보기 <img src="img/btn_go_arrow2.png" alt="" /></span>
+                  </div>
+                </a>
+              </li>
+              <li class="2">
+                <a href="#">
+                  <div class="exhi_img"><img src="img/exhi_img_2.jfif" alt="" /></div>
+                  <div class="exhi_txt">
+                    <span class="sort">특별전시</span>
+                    <span class="state_ing">진행중</span>
+                    <strong>[특별전시실] 한국서가협회 대전지회 서화전 '월당서회전'(제7회)</strong>
+                    <p>
+                      일시 : <span class="date">2021.12.07 ~ 2021.08.01</span> <br />
+                      장소 : <span class="place">1층 특별전시실</span>
+                    </p>
+                    <span class="more">자세히보기 <img src="img/btn_go_arrow2.png" alt="" /></span>
+                  </div>
+                </a>
+              </li>
+              <li class="3">
+                <a href="#">
+                  <div class="exhi_img"><img src="img/exhi_img_3.jfif" alt="" /></div>
+                  <div class="exhi_txt">
+                    <span class="sort">특별전시</span>
+                    <span class="state_end">종료</span>
+                    <strong>[특별전시실] 한국서가협회 대전지회 서화전 '월당서회전'(제7회)</strong>
+                    <p>
+                      일시 : <span class="date">2021.12.07 ~ 2021.08.01</span> <br />
+                      장소 : <span class="place">1층 특별전시실</span>
+                    </p>
+                    <span class="more">자세히보기 <img src="img/btn_go_arrow2.png" alt="" /></span>
+                  </div>
+                </a>
+              </li>
+              <li class="4">
+                <a href="#">
+                  <div class="exhi_img"><img src="img/exhi_img_4.jfif" alt="" /></div>
+                  <div class="exhi_txt">
+                    <span class="sort">특별전시</span>
+                    <span class="state_end">종료</span>
+                    <strong>[특별전시실] 한국서가협회 대전지회 서화전 '월당서회전'(제7회)</strong>
+                    <p>
+                      일시 : <span class="date">2021.12.07 ~ 2021.08.01</span> <br />
+                      장소 : <span class="place">1층 특별전시실</span>
+                    </p>
+                    <span class="more">자세히보기 <img src="img/btn_go_arrow2.png" alt="" /></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="control">
+              <button class="dot on"></button>
+              <button class="dot"></button>
+              <button class="dot"></button>
+              <button class="dot"></button>
+              <button class="play"><img src="img/exhibition_play.png" alt="" /></button>
+              <button class="stop"><img src="img/exhibition_stop.png" alt="" /></button>
+            </div>
+          </div>
+          <!--//.container-->
+        </section>
+        <!--//.exhibit_wrap-->
+        <section class="standing_wrap bg_img1">
+          <div class="container">
+            <h2>상설 전시</h2>
+            <ul class="clrfix">
+              <li class="hover">
+                <a href="#">
+                  <strong>제 1 전시실</strong>
+                  <em>주화 역사관</em>
+                  <span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <strong>제 2 전시실</strong>
+                  <em>지폐 역사관</em>
+                  <span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <strong>제 3 전시실</strong>
+                  <em>위조방지 홍보관</em>
+                  <span></span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <strong>제 4 전시실</strong>
+                  <em>특수 제품관</em>
+                  <span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--//.container-->
+        </section>
+        <!--//.standing_wrap-->
+        <section class="museum_info_wrap">
+          <div class="container">
+            <h2 class="blind">관람안내 및 소식</h2>
+            <div class="con_box cont1 clrfix">
+              <div class="con_s vr">
+                <a href="#">
+                  <h3>VR</h3>
+                  <p><span>미리 만나는</span> 화폐박물관</p>
+                </a>
+              </div>
+              <div class="con_s banner">
+                <div class="ban_slider swiper-container">
+                  <div class="slider swiper-wrapper">
+                    <a href="#" class="swiper-slide ban1"></a>
+                    <a href="#" class="swiper-slide ban2"></a>
+                  </div>
+                  <div class="control">
+                    <div class="btns">
+                      <button class="prev"></button>
+                      <button class="autoPlayBtn play"></button>
+                      <button class="autoPlayBtn stop"></button>
+                      <button class="next"></button>
+                    </div>
+                    <div class="pagination swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--//.banner-->
+            <div class="con_box cont2 clrfix">
+              <div class="con_s question">
+                <h3>관람 문의</h3>
+                <dl>
+                  <dt>문의</dt>
+                  <dd>042.870.1200</dd>
+                </dl>
+                <ul>
+                  <li>관람료 및 주차료 무료입니다.</li>
+                  <li>개인 및 가족은 예약 없이 자유관람이 가능합니다.</li>
+                  <li>단체(20인 이상)는 관람예약이 필요합니다.</li>
+                </ul>
+                <div class="link_btns clrfix">
+                  <a href="#">단체 관람 예약</a>
+                  <a href="#">시설 대관 안내</a>
+                  <a href="#">오시는 길</a>
+                </div>
+                <a href="#" class="more"><img src="img/more_ico.png" alt="새소식 더보기" /></a>
+              </div>
+              <!--//.question-->
+              <div class="con_s opening">
+                <h3>개관 시간</h3>
+                <dl>
+                  <dt>이용시간</dt>
+                  <dd>10:00 ~ 17:00</dd>
+                  <dt>휴관일</dt>
+                  <dd>매주 월요일</dd>
+                </dl>
+                <ul>
+                  <li>1월 1일, 설날 연휴, 추석 연휴, 정부지정 임시공휴일은 휴관입니다.</li>
+                </ul>
+                <a href="#" class="more"><img src="img/more_ico.png" alt="새소식 더보기" /></a>
+              </div>
+              <!--//.opening-->
+            </div>
+            <div class="con_box news">
+              <h3>새소식</h3>
+              <ul>
+                <li>
+                  <a href="#">2022년 새해 복 많이 받으세요!! [2022년 1월 1일 정기휴관]</a>
+                  <span class="date">2021-12-16</span>
+                </li>
+                <li><a href="#">[특별전시실 대관전] '한국서가협회 대전지회'의 일곱번째 서화전 "월당서회전"[특별전시실 대관전] '한국서가협회 대전지회'의 일곱번째 서화전 "월당서회전"[특별전시실 대관전] '한국서가협회 대전지회'의 일곱번째 서화전 "월당서회전"</a><span class="date">2021-12-03</span></li>
+                <li><a href="#">[방역패스 적용] 화폐박물관 2021년 12월 7일부터 '방역패스' 적용합니다.</a><span class="date">2021-12-03</span></li>
+                <li><a href="#">[특별전시실 대관전] 지역 서양화가모임 '그리움'의 네번째 작품전 "그리고, 공감"</a><span class="date">2021-11-22</span></li>
+              </ul>
+              <a href="#" class="more"><img src="img/more_ico.png" alt="새소식 더보기" /></a>
+            </div>
+            <!--//.news-->
+          </div>
+          <!--//.container-->
+        </section>
+        <!--//.museum_info_wrap-->
+      </main>
+      <footer>
+        <div class="footer_menu_wrap clrfix">
+          <div class="container">
+            <ul class="footer_menu">
+              <li class="focus_txt_2"><a href="#" target="_blank">개인정보처리방침</a></li>
+              <li><a href="#" target="_blank">영상정보처리기기운영방침</a></li>
+            </ul>
+          </div>
+          <!--//.container-->
+        </div>
+        <!--//.footer_menu_wrap-->
+        <div class="relative_site_wrap">
+          <ul class="sns">
+            <li>
+              <a href="#" target="_blank"><img src="img/sns_link_ico1.png" alt="트위터" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="img/sns_link_ico2.png" alt="페북" /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><img src="img/sns_link_ico3.png" alt="유튭" /></a>
+            </li>
+          </ul>
+          <div class="family_site">
+            <button>패밀리사이트 <img src="img/relate_site_arrow.png" alt="" /></button>
+            <ul>
+              <li><a href="#" target="_blank">조폐공사</a></li>
+              <li><a href="#" target="_blank">조폐공사 쇼핑몰</a></li>
+              <li><a href="#" target="_blank">한국은행</a></li>
+              <li><a href="#" target="_blank">우표정보마당</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="corp_info_wrap">
+          <div class="container">
+            <img src="img/footer_logo.png" alt="한국조폐공사 komsco" class="footer_logo" />
+            <address>34132) 대전광역시 유성구 과학로 80-67(가정동)<span></span>Tel : 042-870-1200<span></span>문화체육관광부장관 등록 제12호</address>
+            <p class="copyright">Copyright &copy; 2019 Currency Museum of Korea. All Rights Reserved.</p>
+          </div>
+          <!--//.container-->
+        </div>
+        <!--//.corp_info_wrap-->
+      </footer>
+    </div>
+  </body>
+</html>

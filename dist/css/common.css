@@ -1,0 +1,291 @@
+/***************************** common */
+html,
+body {
+  background: #313131;
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+  line-height: normal;
+}
+
+/***************************** color */
+:root {
+  --orange: #e8ba4d;
+  --red: #a8393f;
+}
+
+/***************************** wrap */
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/***************************** title */
+.title {
+  color: var(--orange);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sub_title {
+  padding: 40px 0;
+  color: #313131;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.dot {
+  color: var(--red);
+}
+/***************************** btn */
+.section_more_btn {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.section_more_btn .btn_wrap {
+  display: block;
+  width: 230px;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.section_more_btn .btn_wrap:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: -180px;
+  z-index: -1;
+  transition: 0.5s cubic-bezier(0.55, 0.3, 0, 0.99);
+}
+
+.section_more_btn .btn_wrap:hover:after {
+  left: 180px;
+}
+
+.section_more_btn .btn_wrap p {
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #313131;
+}
+
+.section_more_btn .btn_wrap p .plus {
+  padding-left: 49px;
+}
+
+/***************************** header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  right: 100px;
+  z-index: 9999;
+}
+
+header .wrap {
+  width: 100%;
+}
+
+header .gnb {
+  float: right;
+  padding: 28px 0;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+header .gnb a {
+  float: left;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .gnb a:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+  transition: all 0.3s;
+}
+
+header .gnb a:hover {
+  color: var(--orange);
+}
+
+header .gnb a:hover:after {
+  width: 6px;
+  height: 6px;
+}
+
+header .gnb a.active {
+  color: var(--orange);
+}
+
+header .gnb a.active:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+}
+
+/***************************** visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+
+/***************************** visual parallax */
+.parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax .blue,
+.parallax .gray,
+.parallax .red {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/***************************** visual title */
+.visual .wrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.visual_title h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+/***************************** about_me */
+.about_me {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: -70px;
+  background: #fff;
+  padding: 140px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about_me .wrap {
+  text-align: center;
+}
+
+.about_me .tit_text {
+  line-height: 30px;
+  color: #999;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/***************************** footer*/
+
+footer .contact {
+  padding: 150px 0 100px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+footer .contact .contcat_title {
+  float: left;
+  width: 50%;
+  font-size: 32px;
+}
+
+footer .contact .contcat_title:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background: var(--red);
+}
+
+footer .contact .contact_wrap {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+
+footer .contact .contact_wrap .contact_us .contcat_sub_title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .contact_us a {
+  display: block;
+  padding: 12px 0;
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+footer .contact .contact_wrap .explore .contcat_sub_title {
+  display: block;
+  margin: 70px 0 40px 0;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .explore .navigation a {
+  padding-right: 50px;
+  color: #999;
+}
+
+footer .contact .contact_wrap .explore .navigation a:hover {
+  text-decoration: underline;
+}
+
+footer .copy {
+  width: 100%;
+  padding: 25px 0;
+  border-top: 1px solid #444;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/***************************** animation */
+@keyframes boxAnimate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 110px);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.fade_in {
+  opacity: 0;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOILO</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/work.css" />
+    <script>
+      window.PORTFOLIO_PAGE = "work";
+    </script>
+    <script defer src="../index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <div class="gnb">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#about_me">About me</a>
+          <a href="../index.html#works" class="active">Works</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="gallagher">
+        <div class="visual">
+          <div class="wrap">
+            <h1 class="visual_title fade_in" data-delay="0">
+              Game Site / JavaScript
+              <span class="fade_in" data-delay="200">2D갤러그 게임</span>
+            </h1>
+            <img src="../img/works_img/work_gallagher.png" alt="갤러그게임 홈페이지" />
+          </div>
+        </div>
+        <div class="contents fade_in" data-delay="400">
+          <div class="wrap">
+            <div class="summary">
+              <h2>2D고전게임 '갤러그' 게임</h2>
+              <p>
+                종강 후 부족한 부분을 공부 중 유튜브를 보면서 Vanilla JavaScript로 갤러그 게임을 하드코딩하여 만들었습니다. <br />
+                이미지 데이터를 new 키워드를 사용하여 데이터를 담은 후 keydown 이벤트를 if 문에 사용하여 정해진 키보드를 눌렀을 때 이미지를 그렸습니다. <br />
+                총알과 적군은 빈 배열에 담아 개수를 늘린 후 적군은 캔버스 상단에서 Math의 random 메서드를 사용해 랜덤 한 위치에서 그렸고, 총알은 우주선의 좌표값에서 그렸습니다. <br />new 키워드 사용과 Math의 메서드 사용을 경험할 수 있었던 프로젝트였습니다.
+              </p>
+            </div>
+            <div class="project">
+              <ul>
+                <li>
+                  <b>사용 언어</b>
+                  <p>Vanilla JavaScript</p>
+                </li>
+                <li>
+                  <b>참여도</b>
+                  <p>퍼블리싱(100%)</p>
+                </li>
+                <li>
+                  <b>제작기간</b>
+                  <p>22.08.20 ~ 22.09.20</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contents_img">
+          <div class="wrap">
+            <iframe src="website/gallagher/index.html" frameborder="0" class="fade_in" data-delay="0"></iframe>
+          </div>
+        </div>
+        <div class="work_gotop_btn">
+          <p class="gotop_btn_wrap fade_in" data-delay="0">
+            <button>BACK TO TOP. <span class="top_ico">↑</span></button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <address id="contact" class="contact">
+          <p class="contcat_title">
+            I hope to meet <br />
+            you soon!
+          </p>
+          <div class="contact_wrap">
+            <div class="contact_us">
+              <b class="contcat_sub_title">GET IN TOUCH</b>
+              <a href="https://github.com/Baekangsun/portfolio.git" target="_blank">Github</a>
+              <a href="mailto:ss38318@naver.com" target="_blank">ss38318@naver.com</a>
+              <a href="tel:01027527072" target="_blank">010-2752-7072</a>
+            </div>
+            <div class="explore">
+              <b class="contcat_sub_title">EXPLORE</b>
+              <div class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about_me">About me</a>
+                <a href="../index.html#works" class="active">Works</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </address>
+      </div>
+      <p class="copy">Copyright &copy; KANGSUN BAE 2022. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+* {
+  font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+  line-height: 1;
+}
+
+button {
+  background: transparent;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.blind {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.clrfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  line-height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+header h1 {
+  float: left;
+  padding: 35px 0;
+}
+
+header h1 a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-image: url(../img/logo_white.png);
+  background-size: cover;
+}
+
+header .util {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header .util li:hover a {
+  color: #fa2828;
+}
+
+header .gnb .g1 {
+  float: right;
+}
+
+header .gnb .g1 li {
+  float: left;
+  margin-left: 50px;
+}
+
+
+header .gnb .g1 li a {
+  display: block;
+  width: 100%;
+}
+
+header .gnb .g1 li:last-child {
+  margin-right: 20px;
+}
+
+header .lang {
+  float: right;
+}
+
+header .lang li {
+  float: left;
+  margin-left: 20px;
+}
+
+header .lang li a {
+  display: block;
+}
+
+header .lang li:first-child a:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #fff;
+  margin-right: 40px;
+}
+
+
+.visual_wrap .visula_cont img {
+  width: 100%;
+  height: 100vh;
+}
+
+.visual_wrap .visula_cont .vis_txt {
+  color: #fff;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.visual_wrap .visula_cont strong {
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.visual_wrap .visula_cont p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+
+.visual_wrap .visual_footer ul {
+  position: absolute;
+  left: 10%;
+  bottom: 200px;
+}
+
+.visual_wrap .visual_footer li {
+  display: inline-block;
+  margin-right: 14px;
+  background: url(../img/sp_ent_2x_v2.png) 0 0 no-repeat;
+  background-size: 400px auto;
+}
+
+.visual_wrap .visual_footer li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.visual_wrap .visual_footer li:nth-child(1) {
+  width: 90px;
+  height: 15px;
+  background-position: -163px -64px;
+}
+
+.visual_wrap .visual_footer li:nth-child(2) {
+  width: 58px;
+  height: 15px;
+  background-position: -163px -81px;
+}
+
+.visual_wrap .visual_footer li:nth-child(3) {
+  width: 69px;
+  height: 19px;
+  background-position: -163px -98px;
+}
+
+.visual_wrap .visual_footer li:nth-child(4) {
+  width: 49px;
+  height: 23px;
+  background-position: -163px -135px;
+}
+
+.visual_wrap .visual_footer li:nth-child(5) {
+  width: 100px;
+  height: 24px;
+  background-position: -232px -98px;
+}
+
+
+
+.visual_wrap .visual_slide {
+  position: absolute;
+  right: 10%;
+  bottom: 200px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.visual_wrap .visual_slide button {
+  background: url(../img/sp_ent_2x_v2.png) 0 0 no-repeat;
+  background-size: 400px auto;
+}
+
+.visual_wrap .visual_slide .prev {
+  width: 10px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.visual_wrap .visual_slide .stop {
+  width: 7px;
+  height: 12px;
+  background-position: -12px 0;
+  margin: 0 10px 8px 13px;
+  vertical-align: middle;
+}
+
+.visual_wrap .visual_slide .next {
+  width: 10px;
+  height: 17px;
+  background-position: -21px 0;
+}
+
+.visual_wrap .visual_slide .slidebar_off {
+  display: inline-block;
+  background: #fff;
+  width: 140px;
+  height: 2px;
+  margin: 0 20px 8px 20px;
+}
+
+.visual_wrap .visual_slide .page_num:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: #fff;
+  transform: rotate(30deg);
+  margin: 0 3px -1px 8px;
+}
+
+.crop_info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.crop_info .stock a {
+  display: inline-block;
+  margin: 50px 20%;
+  vertical-align: middle;
+}
+
+.crop_info em {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.crop_info .stock {
+  height: 130px;
+  float: left;
+  width: 50%;
+  background: rgba(250, 40, 40, 0.8);
+}
+
+.crop_info .stock p {
+  display: inline-block;
+  font-size: 28px;
+  margin: 0 10px;
+}
+
+.crop_info .stock span {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+
+.crop_info .press {
+  background: rgba(35, 35, 35, 0.9);
+  float: left;
+  width: 50%;
+  height: 130px;
+}
+
+.crop_info .press>a {
+  display: inline-block;
+  margin: 50px 0px 50px 30px;
+}
+
+.crop_info .press ul {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.crop_info .press li {
+  font-size: 14px;
+}
+
+
+
+/* footer */
+
+footer .notice_wrap {
+  padding: 18px 10%;
+  border-bottom: 1px solid #d8d8d8
+}
+
+footer .notice_wrap strong {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494949;
+}
+
+footer .notice_wrap p {
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+footer .notice_wrap p:hover {
+  text-decoration: underline;
+}
+
+
+footer address {
+  display: inline-block;
+  padding: 39px 0;
+  color: #999;
+}
+
+
+footer address li {
+  float: left;
+  margin-right: 37px;
+  font-size: 14px;
+}
+
+footer address li:hover {
+  text-decoration: underline;
+
+}
+
+footer address li:last-child {
+  font-weight: 700;
+  color: #494949;
+}
+
+footer .family,
+footer .global {
+  float: right;
+  padding-left: 80px;
+  margin-top: 39px;
+  color: #999;
+  position: relative;
+}
+
+footer .family button,
+footer .global button {
+  cursor: pointer;
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer .ico {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/sp_ent_2x_v2.png) 0 0 no-repeat;
+  background-size: 400px auto;
+  background-position: -33px 0;
+  margin: -2px 0 0 7px;
+  vertical-align: middle;
+}
+
+footer .family ul,
+.global ul {
+  display: none;
+  height: 180px;
+  overflow-y: scroll;
+  background: #fff;
+  border: 1px solid #dedede;
+  position: absolute;
+  left: 80px;
+  right: -60px;
+  bottom: 30px;
+  font-size: 13px;
+  padding: 15px;
+}
+
+footer .family li,
+.global li {
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+footer .family li:hover a,
+.global li:hover a {
+  color: #333;
+}
+
+
+footer .copy {
+  font-size: 14px;
+  margin-bottom: 50px;
+  color: #999;
+}

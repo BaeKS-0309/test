@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뚜레쥬르</title>
+    <link rel="stylesheet" href="../../../css/reset.css" />
+    <link rel="stylesheet" href="../../../css/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <!--Skip navigation-->
+    <div class="skip_nav">
+      <a href="#gnb">전체 메뉴 보기</a>
+      <a href="#main">본문 보기</a>
+    </div>
+    <!--skip_nav end-->
+    <header>
+      <div class="container">
+        <h1><a href="#"></a><span class="blind">뚜레쥬르</span></h1>
+        <div class="util">
+          <div class="login_wrap">
+            <a href="#" class="login_btn"><img src="img/header_util_login.png" alt="로그인" /></a>
+          </div>
+          <!-- login_wrap -->
+          <div class="search_wrap">
+            <button class="search_btn"><img src="img/header_util_serch.png" alt="검색" /></button>
+            <div class="search_box">
+              <form action="#">
+                <input type="text" placeholder="검색어를 입력하세요" />
+                <button class="search_close_btn"><img src="img/header_util_box_close_btn_w.png" alt="닫기" /></button>
+                <button class="search_box_btn"><img src="img/header_util_serch.png" alt="검색" /></button>
+              </form>
+            </div>
+            <!-- search_box -->
+          </div>
+          <!-- search_wrap -->
+          <div class="allmenu_wrap">
+            <button class="all_open_btn"><img src="img/header_util_allmenu.png" alt="전체메뉴" /></button>
+            <div class="allmenu_box">
+              <button class="mo_all_login"><img src="img/header_util_login.png" alt="로그인" /></button>
+              <button class="all_close_btn"><img src="img/header_util_box_close_btn.png" alt="닫기" /></button>
+              <ul class="a1">
+                <li>
+                  <a href="#">브랜드스토리</a>
+                  <ul class="a2">
+                    <li><a href="#">브랜드스토리</a></li>
+                    <li><a href="#">뚜레쥬르 광고</a></li>
+                    <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                    <li><a href="#">글로벌 뚜레쥬르</a></li>
+                    <li><a href="#">라뜰리에 뚜레쥬르</a></li>
+                    <li><a href="#">뚜레쥬르 착한빵</a></li>
+                    <li><a href="#">뉴스&공지사항</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">이벤트&할인혜택</a>
+                  <ul class="a2">
+                    <li><a href="#">진행중인 이벤트</a></li>
+                    <li><a href="#">이벤트 당첨자</a></li>
+                    <li><a href="#">CJ ONE 멤버십</a></li>
+                    <li><a href="#">제휴 혜택</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">제품안내</a>
+                  <ul class="a2">
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">빵</a></li>
+                    <li><a href="#">케이크</a></li>
+                    <li><a href="#">델리</a></li>
+                    <li><a href="#">선물</a></li>
+                    <li><a href="#">디저트&스낵</a></li>
+                    <li><a href="#">음료</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">기사 채용안내</a>
+                  <ul class="a2">
+                    <li><a href="#">기사 채용안내</a></li>
+                    <li><a href="#">기사 채용공고</a></li>
+                    <li><a href="#">채용 FAQ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">창업안내</a>
+                  <ul class="a2">
+                    <li><a href="#">뚜레쥬르 신(新) 모델 소개</a></li>
+                    <li><a href="#">창업 성공 스토리</a></li>
+                    <li><a href="#">창업 준비하기</a></li>
+                    <li><a href="#">창업설명회</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">새로워진 뚜레쥬르</a>
+                  <ul class="a2">
+                    <li><a href="#">New 뚜레쥬르 살펴보기</a></li>
+                    <li><a href="#">건강한 데일리 베이커리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="a2">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">온라인 상담</a></li>
+                    <li><a href="#">온라인 상담 내역</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">쇼핑몰&케이크 배달신청</a></li>
+              </ul>
+            </div>
+            <!-- allmenu_box -->
+          </div>
+          <!-- allmenu_wrap -->
+        </div>
+        <!-- util -->
+        <div class="gnb_wrap">
+          <ul class="g1">
+            <li>
+              <a href="#">브랜드 스토리</a>
+              <ul class="g2">
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">뚜레쥬르 광고</a></li>
+                <li><a href="#">뚜레쥬르 재료 이야기</a></li>
+                <li><a href="#">글로벌 뚜레쥬르</a></li>
+                <li><a href="#">라뜰리에 뚜레쥬르</a></li>
+                <li><a href="#">뚜레쥬르 착한빵</a></li>
+                <li><a href="#">뉴스&공지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">제품안내</a>
+              <ul class="g2">
+                <li><a href="#">신제품</a></li>
+                <li><a href="#">빵</a></li>
+                <li><a href="#">케이크</a></li>
+                <li><a href="#">델리</a></li>
+                <li><a href="#">선물</a></li>
+                <li><a href="#">디저트&스낵</a></li>
+                <li><a href="#">음료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트&멤버십</a>
+              <ul class="g2">
+                <li><a href="#">진행중인 이벤트</a></li>
+                <li><a href="#">이벤트 담당자</a></li>
+                <li><a href="#">CJ ONE 멤버십</a></li>
+                <li><a href="#">제휴 혜택</a></li>
+              </ul>
+            </li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <!-- gnb_wrap -->
+      </div>
+      <!-- container -->
+    </header>
+    <main>
+      <section class="visual_wrap">
+        <h2 class="blind">메인 화면</h2>
+        <div class="visual_box">
+          <ul>
+            <li class="visual_slide">
+              <a href="#"><img src="img/visual_1.png" alt="호랑이기운 처럼 힘찬 새해되세요!" class="vis_img1" /></a>
+            </li>
+            <li class="visual_slide">
+              <a href="#"><img src="img/visual_2.png" alt="뚜레쥬르 티거제품구매시 티거_데코 스티커 3900원" class="vis_img2" /></a>
+            </li>
+            <li class="visual_slide">
+              <a href="#"><img src="img/visual_3.png" alt="맛잇는 재료와 함께 봄이 왔나봄~" class="vis_img3" /></a>
+            </li>
+          </ul>
+          <div class="vis_btn_container">
+            <div class="vis_btn">
+              <button class="play"><img src="img/play.png" alt="play" /></button>
+              <button class="Pause"><img src="img/stop.png" alt="stop" /></button>
+              <button class="vis_prve"><img src="img/vis_arrow_button.png" alt="" /></button>
+              <button class="vis_next"><img src="img/vis_arrow_button.png" alt="" /></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- visual_wrap -->
+      <section class="quickmenu_wrap">
+        <h2 class="blind">제품안내</h2>
+        <div class="container">
+          <h3 class="tit_txt">제품안내</h3>
+          <div class="quck_box">
+            <ul class="clrfix">
+              <li class="pc_btn">
+                <a href="#">
+                  <span class="ico ico1"><i class="blind">신제품</i></span>
+                  <p>신제품</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico2"><i class="blind">빵</i></span>
+                  <p>빵</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico3"><i class="blind">케이크</i></span>
+                  <p>케이크</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico4"><i class="blind">델리</i></span>
+                  <p>델리</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico5"><i class="blind">선물</i></span>
+                  <p>선물</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico6"><i class="blind">디저트&스넥</i></span>
+                  <p>디저트&스넥</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="ico ico7"><i class="blind">음료</i></span>
+                  <p>음료</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- container -->
+      </section>
+      <!-- quickmenu_wrap -->
+      <section class="product_wrap">
+        <h2 class="blind">추천제품</h2>
+        <div class="container">
+          <h3 class="tit_txt">추천제품</h3>
+          <div class="content">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_1.png" alt="고소함이 톡톡 곡물식빵" />
+                  <p>고소함이 톡톡 곡물식빵</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_2.png" alt="딸기크림잼 롤케이크" />
+                  <p>딸기크림잼 롤케이크</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_3.png" alt="쿠키 속 사르르 초코크림빵" />
+                  <p>쿠키 속 사르르 초코크림빵</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_4.png" alt="티거_달콤 초코와 썸썸" />
+                  <p>티거_달콤 초코와 썸썸</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_5.png" alt="울퉁불퉁 왕 찰떡빵(대)" />
+                  <p>울퉁불퉁 왕 찰떡빵(대)</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_6.png" alt="크림치즈 호두과자빵" />
+                  <p>크림치즈 호두과자빵</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_7.png" alt="쑥이 듬뿍 맘모스(대)" />
+                  <p>쑥이 듬뿍 맘모스(대)</p>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="img/product_cont_8.png" alt="쑥떡쑥떡 콩쑥이" />
+                  <p>쑥떡쑥떡 콩쑥이</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="prod_slider"></div>
+          <button class="prod_prev"></button>
+          <button class="prod_next"></button>
+          <div class="more_btn"><a href="#">추천제품 더보기</a></div>
+        </div>
+        <!-- container -->
+      </section>
+      <!-- product_wrap -->
+      <section class="event_wrap">
+        <h2 class="blind">제휴혜택</h2>
+        <div class="container">
+          <h3 class="tit_txt">제휴혜택</h3>
+          <div class="event_cont">
+            <!-- 보류 slick사용 -->
+            <ul class="event_box">
+              <li class="event_slide">
+                <a href="#"><img src="img/event_banner1.png" alt="재난지원금 혜택" /></a>
+              </li>
+              <li class="event_slide">
+                <a href="#"><img src="img/event_banner2.jpg" alt="통신사 할인혜택" /></a>
+              </li>
+              <li class="event_slide">
+                <a href="#"><img src="img/event_banner3.png" alt="배달의 민족 할인혜택" /></a>
+              </li>
+              <li class="event_slide">
+                <a href="#"><img src="img/event_banner4.png" alt="배송서비스 안내" /></a>
+              </li>
+              <li class="event_slide">
+                <a href="#"><img src="img/event_banner5.png" alt="요기요 인혜택" /></a>
+              </li>
+            </ul>
+          </div>
+          <!-- event_cont -->
+          <div class="event_btn">
+            <button class="event_prve"></button>
+            <button class="event_next"></button>
+          </div>
+          <!-- dot_wrap -->
+          <div class="more_btn"><a href="#">제휴혜택 더보기</a></div>
+          <!-- more_wrap -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- event_wrap -->
+      <section class="quick_info_wrap">
+        <h2 class="blind">기타 안내</h2>
+        <div class="container">
+          <div class="cont_wrap clrfix">
+            <div class="content">
+              <a href="#">
+                <strong>매장찾기</strong>
+                <p class="pc_txt">
+                  우리집 근처의 뚜레쥬르 <br />
+                  매장을 찾아보세요!
+                </p>
+                <i class="quick_info_ico"></i
+                ><!-- 아이콘 -->
+              </a>
+            </div>
+            <div class="content">
+              <a href="#">
+                <strong>기사채용안내</strong>
+                <p class="pc_txt">
+                  제빵 스페셜리스트의 꿈, <br />
+                  뚜레쥬르에서 마음껏 <br />
+                  펼쳐 보세요.
+                </p>
+                <i class="quick_info_ico"></i>
+              </a>
+            </div>
+            <div class="content">
+              <a href="#">
+                <strong>창업안내</strong>
+                <p class="pc_txt">
+                  새로운 뚜레쥬르와 함께 <br />
+                  당신의 미래를 함께.
+                </p>
+                <i class="quick_info_ico"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- info_wrap -->
+      <section class="news_wrap">
+        <h2 class="blind">뉴스&노티스</h2>
+        <div class="container">
+          <div class="news_cont">
+            <strong>NEWS&NOTICS</strong>
+            <p>2021년 크리스마스 [사랑 뿜뿜 크리스마스! 나와 어울리는 쿠키는] 이벤트 당첨자 발표</p>
+            <span>2022.01.14</span>
+            <img src="img/more_ico.png" alt="더보기 아이콘" /><!-- 더보기 아이콘 -->
+          </div>
+        </div>
+        <!-- container -->
+      </section>
+      <!-- news_wrap -->
+    </main>
+    <footer>
+      <div class="footer_menu">
+        <div class="container">
+          <ul>
+            <!--메뉴 리스트만 있기 때문에 다른 div 박스는 필요 없음-->
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li class="pc_penu"><a href="#">위치기반서비스 이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li class="pc_menu"><a href="#">이메일무단수집거부</a></li>
+            <li class="pc_menu"><a href="#">윤리신고센터</a></li>
+            <li><a href="#">법적고지</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="corp_info">
+        <div class="container">
+          <div class="customer_wrap">
+            <em>고객센터</em>
+            <p>1577-0700</p>
+          </div>
+          <div class="familysite_wrap">
+            <div class="fam_btn">
+              <button>패밀리 사이트 <span></span></button>
+              <ul>
+                <li><a href="#">CJ푸드빌</a></li>
+                <li><a href="#">VIPS</a></li>
+                <li><a href="#">THE PLACE</a></li>
+                <li><a href="#">제일면제소</a></li>
+                <li><a href="#">계절밥상</a></li>
+                <li><a href="#">n.GRILL</a></li>
+                <li><a href="#">CJFOODWORLD</a></li>
+                <li><a href="#">N서울타워</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- familysite_wrap -->
+          <address>
+            상호명:CJ푸드빌(주) <br />
+            주소:(우)04555 서울시 중구 마른내로34(초동 106-9번지) <br class="mo_br" />KT&G을지로타워 3, 9-11층 <br class="mo_br" />
+            CJ푸드빌㈜고객센터:1577-0700통신판매업종신고증 <br class="mo_br" />
+            제 2011-서울중구-0771 <br />
+            호스팅제공자 : CJ올리브네트웍스(주) <br />
+            사업자등록번호:312-81-42519 <br class="mo_br" />대표이사:김찬호개인정보보호책임자:오창호 <br />
+            대표 이메일:help_master@cj.net
+          </address>
+          <!-- address -->
+          <p class="copy">COPYRIGHT 2022©CJ Foodville ALL RIGHT RESERVED.</p>
+        </div>
+        <!-- container -->
+      </div>
+    </footer>
+    <div class="top_btn">
+      <a href="#"><span>TOP</span></a>
+    </div>
+  </body>
+</html>

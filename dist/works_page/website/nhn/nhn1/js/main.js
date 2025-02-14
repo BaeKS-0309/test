@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".family button, .global button").click((function(){var o=$(this).siblings("ul");o.toggle(),"none"===o.css("display")?$(this).css({color:"#999"}):$(this).css({color:"#333"})}))}));

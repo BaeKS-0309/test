@@ -1,0 +1,337 @@
+/***************************** btn */
+.section_more_btn .btn_wrap {
+  width: 190px;
+}
+.section_more_btn .btn_wrap:after {
+  left: -140px;
+}
+.section_more_btn .btn_wrap:hover:after {
+  left: 140px;
+}
+.section_more_btn .btn_wrap p .plus {
+  padding-left: 36px;
+}
+
+/***************************** visual */
+.visual {
+  height: 530px;
+}
+
+/***************************** visual parallax */
+.parallax {
+  width: 100%;
+  height: 530px;
+}
+
+.parallax .blue,
+.parallax .gray,
+.parallax .red {
+  height: 530px;
+}
+
+.parallax .blue {
+  background: url("../img/sub_particle_blue.png") no-repeat center;
+}
+
+.parallax .gray {
+  background: url("../img/sub_particle_gray.png") no-repeat center;
+}
+
+.parallax .red {
+  background: url("../img/sub_particle_red.png") no-repeat center;
+}
+
+/***************************** visual title */
+.visual .wrap {
+  height: 530px;
+}
+
+.visual_title h1 {
+  font-size: 65px;
+}
+
+.visual_title h1 .stroke {
+  color: #313131;
+  -webkit-text-stroke: 3px var(--orange);
+}
+
+.visual_title p {
+  margin-top: 35px;
+  color: #999;
+  font-size: 20px;
+}
+
+/***************************** about_me */
+.about_me {
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+  padding: 140px 0 0 0;
+}
+
+.about_me .service {
+  width: 100%;
+  margin-top: 140px;
+  background: #eee;
+}
+
+.about_me .service .wrap {
+  overflow: hidden;
+}
+
+.about_me .service dl {
+  float: left;
+  width: calc((1100px - 40px) / 3);
+  padding: 50px 40px;
+  margin: 80px 0;
+  min-height: 520px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.about_me .service dt {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about_me .service dd {
+  text-align: left;
+}
+
+.about_me .service dd p {
+  margin-top: 20px;
+  line-height: 32px;
+  color: #999;
+  font-size: 16px;
+}
+
+.about_me .service .ico {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.about_me .service .design .ico {
+  background: url("../img/service.png") -50px 0 no-repeat;
+}
+
+.about_me .service .development .ico {
+  background: url("../img/service.png") 0 0 no-repeat;
+}
+
+.about_me .service .others .ico {
+  background: url("../img/service.png") -100px 0 no-repeat;
+}
+
+.about_me .service .development {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/***************************** resume */
+.resume {
+  width: 100%;
+  padding: 150px 0;
+  background: #fff;
+}
+
+.resume .resume_tit {
+  margin-bottom: 80px;
+  color: var(--orange);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.resume .resume_tit span {
+  display: block;
+  font-size: 34px;
+  color: #313131;
+}
+
+/***************************** resume profile */
+.resume .profile_sub_tit {
+  font-size: 20px;
+  font-weight: 700;
+  color: #313131;
+}
+
+.resume .wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.resume .profile {
+  float: left;
+  width: 360px;
+}
+
+.resume .profile img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 45px;
+}
+
+.resume .profile .name {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #313131;
+  font-weight: 600;
+}
+
+.resume .profile .birth {
+  color: #bbb;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.resume .profile .call,
+.resume .profile .email {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #999;
+  padding: 10px 0;
+}
+
+.resume .profile .call:before,
+.resume .profile .email:before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding-right: 13px;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.resume .profile .call:before {
+  background: url("../img/phone.png") no-repeat;
+}
+
+.resume .profile .email:before {
+  background: url("../img/message.png") no-repeat;
+}
+
+/***************************** resume data */
+.resume .data {
+  float: left;
+  width: 360px;
+}
+
+.resume .data ul {
+  margin: 15px 0 30px 0;
+}
+
+.resume .data ul li {
+  padding: 10px 0;
+  position: relative;
+  font-size: 18px;
+  color: #999;
+}
+
+.resume .data ul li:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  left: 3px;
+  top: 0;
+}
+
+.resume .data ul li:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: var(--red);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 4px);
+}
+
+.resume .data ul li .year {
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+/***************************** resume data */
+.resume .skill {
+  float: left;
+  width: 380px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.resume .skill ul {
+  margin-top: 15px;
+}
+
+.resume .skill ul li {
+  padding: 10px 0;
+  font-size: 18px;
+  color: #666;
+  position: relative;
+}
+
+.resume .skill ul li .percent {
+  font-size: 14px;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+.resume .skill ul li .skill_bar {
+  width: 100%;
+  height: 5px;
+  margin-top: 15px;
+  background: #ccc;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume .skill ul li .skill_bar:after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.resume .skill ul li .skill_bar.on:after {
+  left: 0;
+  transition: all 3s;
+}
+
+.resume .skill ul .html .skill_bar:after {
+  width: 90%;
+  background: #f16528;
+}
+
+.resume .skill ul .css .skill_bar:after {
+  width: 90%;
+  background: #2eaade;
+}
+
+.resume .skill ul .js .skill_bar:after {
+  width: 85%;
+  background: #ffd93a;
+}
+
+.resume .skill ul .ps .skill_bar:after {
+  width: 80%;
+  background: #97c9ef;
+}
+
+.resume .skill ul .ai .skill_bar:after {
+  width: 80%;
+  background: #f4c167;
+}

@@ -1,0 +1,423 @@
+html,
+body {
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+}
+
+/***************************** common */
+/***************************** color */
+:root {
+  --orange: #e8ba4d;
+  --red: #a8393f;
+}
+
+/***************************** wrap */
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/***************************** header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  right: 100px;
+  z-index: 9999;
+}
+
+header .wrap {
+  width: 100%;
+}
+header .gnb {
+  float: right;
+  padding: 28px 0;
+  color: #fff;
+  transition: all 0.3s;
+}
+header .gnb a {
+  float: left;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .gnb a:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+  transition: all 0.3s;
+}
+
+header .gnb a:hover {
+  color: var(--orange);
+}
+
+header .gnb a:hover:after {
+  width: 6px;
+  height: 6px;
+}
+
+header .gnb a.active {
+  color: var(--orange);
+}
+
+header .gnb a.active:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+}
+
+/***************************** main visual*/
+.starbucks .visual,
+.starbucks .contents .summary a:hover {
+  background: #704838;
+}
+.starbucks .contents .summary a {
+  border: 2px solid #704838;
+  color: #704838;
+}
+.tous .visual,
+.tous .contents .summary a:hover {
+  background: #406252;
+}
+.tous .contents .summary a {
+  border: 2px solid #406252;
+  color: #406252;
+}
+.komsco .visual,
+.komsco .contents .summary a:hover {
+  background: #665d53;
+}
+.komsco .contents .summary a {
+  border: 2px solid #665d53;
+  color: #665d53;
+}
+.kakao .visual,
+.kakao .contents .summary a:hover {
+  background: #fae100;
+}
+.kakao .contents .summary a {
+  border: 2px solid #ffc600;
+  color: #ffc600;
+}
+.jiran .visual {
+  background: #ff7f00;
+}
+.jiran .contents .summary a,
+.jiran .contents .summary a:hover {
+  border: 2px solid #ff7f00;
+  color: #ff7f00;
+}
+.tetris .visual,
+.tetris .contents .summary a:hover {
+  background: #f97c6d;
+}
+.tetris .contents .summary a {
+  border: 2px solid #f97c6d;
+  color: #f97c6d;
+}
+.calculator .visual,
+.calculator .contents .summary a:hover {
+  background: #a2d8ce;
+}
+.calculator .contents .summary a {
+  border: 2px solid #a2d8ce;
+  color: #a2d8ce;
+}
+
+.nhn .visual,
+.nhn .contents .summary a:hover {
+  background: #ec4546;
+}
+.nhn .contents .summary a {
+  border: 2px solid #ec4546;
+  color: #ec4546;
+}
+.gallagher .visual,
+.gallagher .contents .summary a:hover {
+  background: #a972c9;
+}
+.gallagher .contents .summary a {
+  border: 2px solid #a972c9;
+  color: #a972c9;
+}
+.bosung .visual,
+.bosung .contents .summary a:hover {
+  background: #38465b;
+}
+.bosung .contents .summary a {
+  border: 2px solid #38465b;
+  color: #38465b;
+}
+.visual {
+  width: 100%;
+  height: 530px;
+  overflow: hidden;
+}
+.visual .wrap {
+  position: relative;
+  height: 100%;
+}
+.visual .visual_title {
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+}
+.visual .visual_title span {
+  display: block;
+  margin-top: 30px;
+  font-size: 40px;
+}
+.visual img {
+  width: 645px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 3px 50px rgb(0 0 0 / 50%);
+}
+/***************************** main contents*/
+.contents {
+  margin: 150px 0 100px 0;
+}
+.contents .wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contents .summary {
+  float: left;
+  width: 60%;
+}
+.contents .summary h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contents .summary p {
+  line-height: 32px;
+  font-size: 18px;
+  color: #999;
+}
+.contents .summary a {
+  display: block;
+  width: 200px;
+  height: 46px;
+  line-height: 44px;
+  margin-top: 70px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.contents .summary a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+.contents .project {
+  float: right;
+  width: 30%;
+}
+.contents .project li {
+  margin-bottom: 60px;
+}
+.contents .project li b {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contents .project li p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #999;
+}
+.contents_img {
+  padding: 200px 0 100px 0;
+  background: #eee;
+}
+.gallagher .contents_img {
+  padding: 120px 0 100px 0;
+}
+
+.calculator .contents_img {
+  padding: 0;
+}
+.contents_img .wrap {
+  position: relative;
+}
+.contents_img .wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contents_img img {
+  display: block;
+  box-shadow: 0px 0px 50px -10px rgb(0 0 0 / 50%);
+}
+.contents_img iframe {
+  width: 100%;
+  height: 1000px;
+}
+.tetris .contents_img iframe {
+  height: 880px;
+}
+
+.contents_img .pc_img {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.contents_img .mo_img_wrap {
+  float: left;
+}
+.contents_img .mo_img_wrap:nth-child(3) {
+  padding: 0 25px;
+}
+.contents_img .mo_img_wrap .img_margin {
+  margin-bottom: 25px;
+}
+.contents_img .mo_img_wrap .mo_img {
+  width: 350px;
+}
+
+/***************************** btn */
+.work_gotop_btn {
+  display: block;
+  width: 190px;
+  margin: 150px auto;
+}
+
+.work_gotop_btn .gotop_btn_wrap {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work_gotop_btn .gotop_btn_wrap:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: -140px;
+  z-index: -1;
+  transition: 0.5s cubic-bezier(0.55, 0.3, 0, 0.99);
+}
+
+.work_gotop_btn .gotop_btn_wrap:hover:after {
+  left: 140px;
+}
+
+.work_gotop_btn .gotop_btn_wrap button {
+  padding: 15px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #313131;
+  box-sizing: border-box;
+}
+
+.work_gotop_btn .gotop_btn_wrap button .top_ico {
+  padding-left: 37px;
+}
+
+/***************************** footer*/
+footer {
+  background: #313131;
+}
+footer .contact {
+  padding: 150px 0 100px 0;
+  color: #fff;
+}
+footer .contact:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .contact .contcat_title {
+  float: left;
+  width: 50%;
+  font-size: 32px;
+}
+
+footer .contact .contcat_title:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background: var(--red);
+}
+
+footer .contact .contact_wrap {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+
+footer .contact .contact_wrap .contact_us .contcat_sub_title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .contact_us a {
+  display: block;
+  padding: 12px 0;
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+footer .contact .contact_wrap .explore .contcat_sub_title {
+  display: block;
+  margin: 70px 0 40px 0;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .explore .navigation a {
+  padding-right: 50px;
+  color: #999;
+}
+
+footer .contact .contact_wrap .explore .navigation a:hover {
+  text-decoration: underline;
+}
+
+footer .copy {
+  width: 100%;
+  padding: 25px 0;
+  border-top: 1px solid #444;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/***************************** animation */
+@keyframes boxAnimate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 110px);
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.fade_in {
+  opacity: 0;
+}

@@ -1,0 +1,560 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+
+/*Common*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+em,
+button {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  line-height: 1em;
+  background: none;
+  border: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*default*/
+body {
+  font-size: 14px;
+  color: #494949;
+  font-family: 'Montserrat', 'NanumBarunGothic', 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  width: 1080px;
+  margin: auto;
+  position: relative;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clrfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+
+/*Header*/
+header {
+  background: #FFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+header h1 {
+  float: left;
+  padding: 35px 0;
+}
+
+header h1 a {
+  display: block;
+  width: 120px;
+  height: 30px;
+  background: url(../img/logo.png);
+  background-size: auto 100%;
+}
+
+header .util {}
+
+header .lang_wrap {
+  float: right;
+  padding: 35px 0;
+}
+
+header .lang_wrap .lang {}
+
+header .lang_wrap .lang li {
+  float: left;
+  line-height: 30px;
+}
+
+header .lang_wrap .lang li:first-child {
+  margin-right: 20px;
+  color: #f92828;
+}
+
+header .lang_wrap .lang li a {
+  display: block;
+  font-weight: 600;
+}
+
+
+header .gnb {
+  float: right;
+}
+
+header .gnb .g1 {}
+
+header .gnb .g1:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 10px 40px 0 40px;
+  background: #dcdcdc;
+}
+
+header .gnb .g1>li {
+  float: left;
+  line-height: 30px;
+  margin-left: 50px;
+  position: relative;
+}
+
+
+header .gnb .g1>li>a:hover {
+  color: #f92828;
+}
+
+header .gnb .g1>li>a {
+  display: block;
+  font-weight: 600;
+  padding: 35px 0;
+}
+
+header .gnb .g2 {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: -700px;
+  top: 120px;
+}
+
+header .gnb .g1>li:nth-child(2) .g2 {
+  left: -120px;
+}
+
+header .gnb .g1>li:nth-child(4) .g2 {
+  left: -250px;
+}
+
+
+header .gnb .g2>li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+header .gnb .g2>li>a {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 14px;
+  color: #999;
+}
+
+/*Footer*/
+footer address {
+  display: inline-block;
+  padding: 39px 0;
+  color: #999;
+}
+
+footer address ul {}
+
+footer address li {
+  float: left;
+  margin-right: 37px;
+  font-size: 14px;
+}
+
+footer address li:hover {
+  text-decoration: underline;
+
+}
+
+footer address li:last-child {
+  font-weight: 700;
+  color: #494949;
+}
+
+footer .family,
+footer .global {
+  float: right;
+  padding-right: 50px;
+  margin-top: 39px;
+  color: #999;
+  position: relative;
+}
+
+footer .family button,
+footer .global button {
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+}
+
+footer .ico {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/sp_ent_2x_v2.png) 0 0 no-repeat;
+  background-size: 400px auto;
+  background-position: -33px 0;
+  margin: -2px 0 0 7px;
+  vertical-align: middle;
+}
+
+footer .family ul,
+.global ul {
+  display: none;
+  height: 165px;
+  overflow-y: scroll;
+  background: #fff;
+  border: 1px solid #dedede;
+  position: absolute;
+  left: 0;
+  right: 10px;
+  bottom: 30px;
+  font-size: 13px;
+  padding: 15px;
+}
+
+footer .family li,
+.global li {
+  line-height: 1.7;
+
+  font-weight: 500;
+}
+
+footer .family li:hover a,
+.global li:hover a {
+  color: #333;
+}
+
+
+footer .copy {
+  font-size: 14px;
+  margin-bottom: 50px;
+  color: #999;
+}
+
+/**********/
+/*Main*/
+main {}
+
+main h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 200px 0 65px 0;
+}
+
+main h3 {
+  padding: 65px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*Main - 주요관계사*/
+.related_company header .gnb .g1>li:first-child>a {
+  color: red;
+}
+
+.related_company main h3 {
+  border-top: 1px solid #ddd;
+}
+
+.related_company main ul {}
+
+.related_company main ul>li {
+  float: left;
+  width: 50%;
+}
+
+.related_company main ul>li a {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.related_company main ul>li a img {
+  width: 50%;
+}
+
+.related_company main ul>li p {
+  padding-bottom: 65px;
+  font-size: 14px;
+  color: #777;
+  line-height: 2em;
+}
+
+.related_company .pay a {
+  height: 64px;
+}
+
+.related_company .content li {
+  height: 240px;
+}
+
+.related_company .commerce li:nth-child(2) {
+  height: 293px;
+}
+
+.related_company .etc {
+  border-bottom: 1px solid #ccc;
+}
+
+/*Main - 기업윤리규범*/
+.company_ethics header .gnb .g1>li:first-child>a {
+  color: red;
+}
+
+.company_ethics .company_btn {
+  float: right;
+  margin-top: -100px;
+}
+
+.company_ethics .company_btn a {
+  text-align: center;
+  border: 1px solid #000;
+  display: inline-block;
+  width: 145px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.company_ethics .company_btn a:first-child {
+  margin-right: 10px;
+}
+
+.company_ethics h3 {
+  padding: 0 18px;
+  position: absolute;
+  left: 50%;
+  top: 295px;
+  transform: translate(-50%, -50%);
+  background: #FFF;
+}
+
+.bizethics_info {
+  padding: 34px;
+  border: 1px solid red;
+  border-radius: 123px;
+}
+
+.bizethics_info li {
+  float: left;
+  width: 178px;
+  height: 178px;
+  margin-right: 30px;
+  position: relative;
+  background: #f7f7f7;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.bizethics_info li:last-child {
+  margin-right: 0;
+}
+
+.bizethics_info li .info_txt {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.bizethics_info li .info_txt em {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bizethics_info li .info_txt span {
+  display: block;
+  line-height: 1.7em;
+}
+
+
+.company_ethics main .bizethics_list {
+  padding-bottom: 60px;
+}
+
+.company_ethics main .bizethics_list li {
+  padding: 35px 0 35px 150px;
+  position: relative;
+}
+
+.company_ethics main .bizethics_list li:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.company_ethics main .bizethics_list li:nth-child(1):before {
+  background: url(../img/img-bizethics-1.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li:nth-child(2):before {
+  background: url(../img/img-bizethics-2.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li:nth-child(3):before {
+  background: url(../img/img-bizethics-3.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li:nth-child(4):before {
+  background: url(../img/img-bizethics-4.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li:nth-child(5):before {
+  background: url(../img/img-bizethics-5.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li:nth-child(6):before {
+  background: url(../img/img-bizethics-6.png) no-repeat center;
+}
+
+.company_ethics main .bizethics_list li em {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #777;
+}
+
+.company_ethics main .bizethics_list li p {
+  line-height: 2em;
+  color: #777;
+}
+
+.company_ethics footer {
+  border-top: 1px solid #ccc;
+}
+
+/*Main - 보도자료*/
+.press_release header .gnb .g1>li:nth-child(3)>a {
+  color: red;
+}
+
+.press_release main h2 {
+  border-bottom: 1px solid #CCC;
+}
+
+.press_release main ul {}
+
+.press_release main ul li {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.press_release main ul li::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: 100% !important;
+}
+
+.press_release main ul li:nth-child(1):before {
+  background: url(../img/pr_1.png) no-repeat center;
+}
+
+.press_release main ul li:nth-child(2):before {
+  background: url(../img/pr_2.png) no-repeat center;
+}
+
+.press_release main ul li:nth-child(3):before {
+  background: url(../img/pr_3.png) no-repeat center;
+}
+
+.press_release main ul li:nth-child(4):before {
+  background: url(../img/pr_4.png) no-repeat center;
+}
+
+.press_release main ul li:nth-child(5):before {
+  background: url(../img/pr_5.png) no-repeat center;
+}
+
+.press_release main ul p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.press_release main ul .date {
+  font-size: 14px;
+  color: #999;
+}
